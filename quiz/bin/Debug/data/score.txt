@@ -1,0 +1,14 @@
+pkt
+3
+imie
+Daria
+pkt
+4
+imie
+daria
+pkt
+2
+imie
+DAria
+pkt
+1

@@ -1,0 +1,55 @@
+﻿<Page x:Class="quiz.Quiz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:quiz"
+        mc:Ignorable="d"
+        Title="" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+    <StackPanel Grid.Row="0" >
+            
+            <GroupBox Margin="10" Padding="20" BorderBrush="Black"   >
+            <GroupBox.Header>
+                <Bold>
+                    <TextBlock TextWrapping="Wrap" Name="q" VerticalAlignment="Top" FontSize="20"/>
+                </Bold>
+            </GroupBox.Header>
+                <GroupBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.7"/>
+                </GroupBox.Background>
+            <StackPanel   >
+                    
+
+                    <RadioButton Margin="5" Name="rba">
+                        <TextBlock  TextWrapping="Wrap" Name="a"  VerticalAlignment="Top" FontSize="15"/>
+                </RadioButton>
+                <RadioButton Margin="5" Name="rbb">
+                        <TextBlock  TextWrapping="Wrap" Name="b" VerticalAlignment="Top" FontSize="15"/>
+                </RadioButton>
+                <RadioButton Margin="5" Name="rbc">
+                        <TextBlock  TextWrapping="Wrap"  VerticalAlignment="Top" Name="c" FontSize="15"/>
+                </RadioButton>
+                <RadioButton Margin="5" Name="rbd">
+                        <TextBlock  TextWrapping="Wrap"  VerticalAlignment="Top" Name="d" FontSize="15"/>
+                </RadioButton>
+            </StackPanel>
+        </GroupBox>
+            <Button Grid.Row="1" Content="Zatwierdź" HorizontalAlignment="right"  Margin="0,0,40,10" VerticalAlignment="Top" Width="75" Name="ok" Click="ok_Click"/>
+            <ProgressBar HorizontalAlignment="center" Height="21"  VerticalAlignment="bottom" Width="523" x:Name="Pb" Foreground="#FF25ECEC" BorderBrush="Black" Background="White" />
+        </StackPanel>
+        <TextBlock Grid.Row="2" Text="© Daria Wiśniewska" Margin="10" FontSize="10" VerticalAlignment="Bottom" HorizontalAlignment="Right" />
+        <TextBlock Grid.Row="2" Text="Do użytku wewnętrznego Auchan Częstochowa Północ" Margin="10" FontSize="10" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+
+
+
+        <Grid.Background>
+            <ImageBrush ImageSource="bg/tlo.jpg" />
+        </Grid.Background>
+    </Grid>
+</Page>

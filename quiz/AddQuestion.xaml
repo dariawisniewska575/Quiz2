@@ -1,0 +1,36 @@
+﻿<Window x:Class="quiz.AddQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:quiz"
+        mc:Ignorable="d"
+        Title="Dodaj pytanie" Height="330" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="56,30,0,0" TextWrapping="Wrap" Text="Pytanie" VerticalAlignment="Top" Height="22" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="191,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="302" Name="AddedQuestion"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,57,0,0" TextWrapping="Wrap" Text="Odpowiedź A" VerticalAlignment="Top" Height="22" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="191,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="302" Name="AddedAnswerA"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,86,0,0" TextWrapping="Wrap" Text="Odpowiedź B" VerticalAlignment="Top" Height="22" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="191,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="302" Name="AddedAnswerB" RenderTransformOrigin="0.509,2.776"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,113,0,0" TextWrapping="Wrap" Text="Odpowiedź C" VerticalAlignment="Top" Height="22" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="191,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="302" Name="AddedAnswerC" RenderTransformOrigin="0.509,2.776"/>
+        <TextBlock HorizontalAlignment="Left" Margin="54,142,0,0" TextWrapping="Wrap" Text="Odpowiedź D" VerticalAlignment="Top" Height="22" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="191,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="302" Name="AddedAnswerD" RenderTransformOrigin="0.509,2.776"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="191,170,0,0"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="302" Name="AddedCorrect" RenderTransformOrigin="0.509,2.776"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="418,222,0,0" VerticalAlignment="Top" Width="75" Name="ok" Click="ok_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="56,169,0,0" TextWrapping="Wrap"  Text="Poprawna odpowiedź" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="1" Text="© Daria Wiśniewska" Margin="10" FontSize="10" VerticalAlignment="Bottom" HorizontalAlignment="Right" />
+        <TextBlock Grid.Row="1" Text="Do użytku wewnętrznego Auchan Częstochowa Północ" Margin="10" FontSize="10" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+
+
+        <Grid.Background>
+            <ImageBrush ImageSource="bg/tlo.jpg" />
+        </Grid.Background>
+    </Grid>
+</Window>

@@ -1,0 +1,43 @@
+﻿<Page x:Class="quiz.Instruction"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:quiz"
+      mc:Ignorable="d" 
+      
+      Title="Instrukcja">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="20">
+        <Expander Grid.Row="0" Header="Usuwanie pytań" FontWeight="Bold" >
+                <TextBlock TextWrapping="wrap" FontWeight="Normal" Margin="20,0,0,0">Jeżeli przy usuwaniu pytania w jego miejsce pojawią się liczby należy usunąć plik <Italic>plik.txt</Italic> w folderze <Italic>data</Italic> i utworzyć go ponownie. Można również otworzyć w/w plik i usunąć treść pliku od wyrazu <Italic>Pytanie</Italic> do wyrazu <Italic>eoq</Italic> łącznie z nimi</TextBlock>
+
+            </Expander>
+        <Expander Grid.Row="0" Header="Komunikat: 'Błąd aplikacji'" FontWeight="Bold" >
+                <TextBlock FontWeight="Normal" Margin="20,0,0,0">W folderze <Italic>data</Italic> nalezy utworzyc pusty plik tekstowy o nazwie <Italic>plik.txt</Italic></TextBlock>
+
+            </Expander>
+        <Expander Grid.Row="0" Header="Komunikat: 'Brak pytań w bazie'" FontWeight="Bold" >
+                <TextBlock FontWeight="Normal" Margin="20,0,0,0">Należy dodać pytania do bazy, klikając przycisk 'Dodaj pytanie' </TextBlock>
+        </Expander>
+            <Expander Grid.Row="0" Header="Inne ważne" FontWeight="Bold" >
+                <TextBlock FontWeight="Normal" Margin="20,0,0,0">NIE WOLNO używać strzałek w lewym górnym rogu, w szczególności podczas odpowiadania na pytania</TextBlock>
+
+            </Expander>
+        </StackPanel>
+        
+        <TextBlock Grid.Row="1" Text="© Daria Wiśniewska" Margin="10" FontSize="10" VerticalAlignment="Bottom" HorizontalAlignment="Right" />
+        <TextBlock Grid.Row="1" Text="Do użytku wewnętrznego Auchan Częstochowa Północ" Margin="10" FontSize="10" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+        <Button Content="Wróć " Grid.Row="1" HorizontalAlignment="center"  VerticalAlignment="Bottom" Margin="0,0,0,30" Width="75" Click="Button_Click"/>
+
+
+        <Grid.Background>
+            <ImageBrush ImageSource="bg/tlo.jpg" />
+        </Grid.Background>
+    </Grid>
+</Page>
